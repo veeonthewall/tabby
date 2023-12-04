@@ -1,0 +1,7 @@
+name: tabby
+version: '${version}'
+main: com.veeonthewall.tabby.Tabby
+api-version: '1.20'
+load: STARTUP
+author: veeonthewall
+description: Simple and elegant tab-list.
