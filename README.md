@@ -1,5 +1,5 @@
 # tabby
-Simple and elegant tab-list customization.
+Simple and elegant tab-list customization for Minecraft 1.20+
 
 # Usage
 
