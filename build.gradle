@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.veeonthewall'
-version = '1.0-SNAPSHOT'
+version = '1.1-ThunderRedStar'
 
 repositories {
     mavenCentral()
@@ -15,13 +15,27 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "placeholderapi"
+        url = "https://repo.extendedclip.com/content/repositories/placeholderapi/"
+    }
 }
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT"
+    compileOnly "org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT"
+    compileOnly "me.clip:placeholderapi:2.11.5"
+    implementation "net.kyori:adventure-platform-bukkit:4.3.1"
 }
 
 def targetJavaVersion = 17
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
