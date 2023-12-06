@@ -1,2 +1,21 @@
-header: "Test Header"
-footer: "Test Footer"
+# Useful default placeholders:
+# %player% - player name
+# %online% - online players
+# %max% - max players
+
+# Plugin prefix
+prefix: "&6&lTabby &8&l» &7"
+# Tablist header. Supports placeholders.
+header:
+  - ""
+  - "&6&lTabby"
+  - "&7Online: &a%online%&7/&a%max%"
+  - ""
+# Tablist footer. Supports placeholders.
+footer:
+  - ""
+  - "&7Welcome, &a%player%"
+  - ""
+# How often to update the tablist header and footer, in ticks.
+# 20 ticks = 1 second.
+update-interval: 20

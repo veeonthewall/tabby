@@ -3,5 +3,15 @@ version: '${version}'
 main: com.veeonthewall.tabby.Tabby
 api-version: '1.20'
 load: STARTUP
-author: veeonthewall
+author: veeonthewall, ThunderRedStar
 description: Simple and elegant tab-list.
+
+# for providing more comprehensive placeholders
+softdepend: [PlaceholderAPI]
+
+# commands
+commands:
+  tabby:
+    description: Tabby command
+    usage: /<command> [reload]
+    aliases: [tabby, tabbyreload]
